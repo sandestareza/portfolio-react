@@ -13,11 +13,11 @@ const Navbar = () => {
 
         {/* Menu */}
         <ul className='hidden md:flex'>
-          <li className='hover:text-blue-400 hover:font-bold'>Home</li>
-          <li className='hover:text-blue-400 hover:font-bold'>About</li>
-          <li className='hover:text-blue-400 hover:font-bold'>Skills</li>
-          <li className='hover:text-blue-400 hover:font-bold'>Portfolio</li>
-          <li className='hover:text-blue-400 hover:font-bold'>Contact</li>
+          <li><a href='#home' className='hover:text-blue-400 hover:font-bold'>Home</a></li>
+          <li><a href='#about' className='hover:text-blue-400 hover:font-bold'>About</a></li>
+          <li><a href='#skills' className='hover:text-blue-400 hover:font-bold'>Skills</a></li>
+          <li><a href='#portfolio' className='hover:text-blue-400 hover:font-bold'>Portfolio</a></li>
+          <li><a href='#contact' className='hover:text-blue-400 hover:font-bold'>Contact</a></li>
         </ul>
 
         {/* Hambuger */}
@@ -27,11 +27,11 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-slate-900 flex flex-col justify-center items-center'}>
-          <li className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>Home</li>
-          <li className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>About</li>
-          <li className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>Skills</li>
-          <li className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>Portfolio</li>
-          <li className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>Contact</li>
+          <li><a href='#home' className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>Home</a></li>
+          <li><a href='#about' className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>About</a></li>
+          <li><a href='#skills' className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>Skills</a></li>
+          <li><a href='#portfolio' className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>Portfolio</a></li>
+          <li><a href='#contact' className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>Contact</a></li>
         </ul>
 
         {/* Social Media */}

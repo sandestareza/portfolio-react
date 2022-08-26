@@ -8,7 +8,7 @@ import Nextjs from '../assets/nextjs.png'
 
 const Skills = () => {
   return (
-    <div name='skills' className='w-full h-screen bg-slate-900 text-gray-300'>
+    <div id='skills' className='w-full h-screen bg-slate-900 text-gray-300'>
         {/* Container */}
         <div className='max-w-[1000px] w-full h-full p-4 mx-auto flex flex-col justify-center'>
             <div>
