@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Logo from '../assets/logo.png'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Navbar = () => {
@@ -7,32 +6,32 @@ const Navbar = () => {
 
   const clickHamburger = () => setNav(!nav)
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 text-slate-300 bg-slate-900'>
-        <div>
-            <img src={Logo} alt='logo' className='w-8'/>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 text-slate-300 bg-slate-900 shadow-md'>
+        <div className='w-14 h-14 border-2 bottom-3 rounded-full border-pink-500 p-3 font-bold text-xl'>
+           SR
         </div>
 
         {/* Menu */}
         <ul className='hidden md:flex'>
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
+          <li className='hover:text-blue-400 hover:font-bold'>Home</li>
+          <li className='hover:text-blue-400 hover:font-bold'>About</li>
+          <li className='hover:text-blue-400 hover:font-bold'>Skills</li>
+          <li className='hover:text-blue-400 hover:font-bold'>Portfolio</li>
+          <li className='hover:text-blue-400 hover:font-bold'>Contact</li>
         </ul>
 
         {/* Hambuger */}
-        <div onClick={clickHamburger} className='md:hidden z-10'>
+        <div onClick={clickHamburger} className='md:hidden z-10 cursor-pointer'>
           { !nav ? <FaBars /> : <FaTimes />}          
         </div>
 
         {/* Mobile Menu */}
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-slate-900 flex flex-col justify-center items-center'}>
-          <li className='py-6 text-3xl'>Home</li>
-          <li className='py-6 text-3xl'>About</li>
-          <li className='py-6 text-3xl'>Skills</li>
-          <li className='py-6 text-3xl'>Portfolio</li>
-          <li className='py-6 text-3xl'>Contact</li>
+          <li className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>Home</li>
+          <li className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>About</li>
+          <li className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>Skills</li>
+          <li className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>Portfolio</li>
+          <li className='py-6 text-3xl hover:text-blue-400 hover:font-bold'>Contact</li>
         </ul>
 
         {/* Social Media */}
@@ -40,13 +39,13 @@ const Navbar = () => {
           <ul>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-800'>
               <a className='flex justify-between items-center w-full text-gray-300'
-                href="/">
+                href="https://www.linkedin.com/in/sandesta-reza-456546203/">
                   Linkedin <FaLinkedin size={30}/>
               </a>
             </li>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-700'>
               <a className='flex justify-between items-center w-full text-gray-300'
-                href="/">
+                href="https://github.com/sandestareza">
                   Github <FaGithub size={30}/>
               </a>
             </li>
