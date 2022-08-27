@@ -3,21 +3,32 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
+  const [activeLink, setActiveLink] = useState({ home : 'text-green-400 font-bold' })
 
   const clickHamburger = () => setNav(!nav)
+
+
+  const handleClick = (e) => {
+    if(e.target.hash === '#home') setActiveLink({home:'text-green-400 font-bold'})
+    else if(e.target.hash === '#about') setActiveLink({about:'text-green-400 font-bold'})
+    else if(e.target.hash === '#skills') setActiveLink({skills:'text-green-400 font-bold'})
+    else if(e.target.hash === '#portfolio') setActiveLink({portfolio:'text-green-400 font-bold'})
+    else setActiveLink({contact:'text-green-400 font-bold'})
+  }
+
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 text-slate-300 bg-slate-900 shadow-md'>
-        <div className='w-14 h-14 border-2 bottom-3 rounded-full border-pink-500 p-3 font-bold text-xl'>
+        <div className='w-14 h-14 border-2 bottom-3 rounded-full border-green-500 p-3 font-bold text-xl'>
            SR
         </div>
 
         {/* Menu */}
         <ul className='hidden md:flex'>
-          <li><a href='#home' className='hover:text-blue-400 hover:font-bold'>Home</a></li>
-          <li><a href='#about' className='hover:text-blue-400 hover:font-bold'>About</a></li>
-          <li><a href='#skills' className='hover:text-blue-400 hover:font-bold'>Skills</a></li>
-          <li><a href='#portfolio' className='hover:text-blue-400 hover:font-bold'>Portfolio</a></li>
-          <li><a href='#contact' className='hover:text-blue-400 hover:font-bold'>Contact</a></li>
+          <li><a href='#home' className={'hover:text-green-400 hover:font-bold '+activeLink?.home}  onClick={handleClick} >Home</a></li>
+          <li><a href='#about' className={'hover:text-green-400 hover:font-bold '+activeLink?.about} onClick={handleClick} >About</a></li>
+          <li><a href='#skills' className={'hover:text-green-400 hover:font-bold '+activeLink?.skills} onClick={handleClick}>Skills</a></li>
+          <li><a href='#portfolio' className={'hover:text-green-400 hover:font-bold '+activeLink?.portfolio} onClick={handleClick}>Portfolio</a></li>
+          <li><a href='#contact' className={'hover:text-green-400 hover:font-bold '+activeLink?.contact} onClick={handleClick}>Contact</a></li>
         </ul>
 
         {/* Hambuger */}
@@ -26,18 +37,18 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-slate-900 flex flex-col justify-center items-center'}>
-          <li className='py-6 text-3xl'><a href='#home' className='hover:text-blue-400 hover:font-bold'>Home</a></li>
-          <li className='py-6 text-3xl'><a href='#about' className='hover:text-blue-400 hover:font-bold'>About</a></li>
-          <li className='py-6 text-3xl'><a href='#skills' className='hover:text-blue-400 hover:font-bold'>Skills</a></li>
-          <li className='py-6 text-3xl'><a href='#portfolio' className='hover:text-blue-400 hover:font-bold'>Portfolio</a></li>
-          <li className='py-6 text-3xl'><a href='#contact' className='hover:text-blue-400 hover:font-bold'>Contact</a></li>
+        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-slate-900 opacity-95 flex flex-col justify-center items-center'}>
+          <li className='py-6 text-3xl'><a href='#home' className={'hover:text-green-400 hover:font-bold '+activeLink?.home} onClick={handleClick}>Home</a></li>
+          <li className='py-6 text-3xl'><a href='#about' className={'hover:text-green-400 hover:font-bold '+activeLink?.about} onClick={handleClick}>About</a></li>
+          <li className='py-6 text-3xl'><a href='#skills' className={'hover:text-green-400 hover:font-bold '+activeLink?.skills} onClick={handleClick}>Skills</a></li>
+          <li className='py-6 text-3xl'><a href='#portfolio' className={'hover:text-green-400 hover:font-bold '+activeLink?.portfolio} onClick={handleClick}>Portfolio</a></li>
+          <li className='py-6 text-3xl'><a href='#contact' className={'hover:text-green-400 hover:font-bold '+activeLink?.contact} onClick={handleClick}>Contact</a></li>
         </ul>
 
         {/* Social Media */}
         <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
           <ul>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-800'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-green-800'>
               <a className='flex justify-between items-center w-full text-gray-300'
                 href="https://www.linkedin.com/in/sandesta-reza-456546203/">
                   Linkedin <FaLinkedin size={30}/>

@@ -6,7 +6,7 @@ const Portfolio = () => {
     <div id='portfolio' className='w-full md:h-screen bg-slate-900 text-gray-300'>
         <div className='max-w-[1000px] w-full h-full p-4 mx-auto flex flex-col justify-center'>
             <div className='pb-8'>
-                <p className='text-4xl font-bold inline border-b-4 border-pink-600'>Portfolio</p>
+                <p className='text-4xl font-bold inline border-b-4 border-green-600'>Portfolio</p>
                 <p className='py-6'>Here are some of the projects I've worked on</p>
             </div>
 
