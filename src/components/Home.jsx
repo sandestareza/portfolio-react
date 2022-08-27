@@ -10,7 +10,7 @@ const Home = () => {
           <p className='text-pink-600'>Hi, my name is</p>
           <h1 className='text-4xl sm:text-7xl font-bold text-slate-300'>Sandesta Reza</h1>
           <TypeAnimation
-            sequence={["I'm Frontend Developer", 2000, "I'm UI Design", 2000]}
+            sequence={["I'm Frontend Developer", 2000, ""]}
             speed={20} // Must be in range between 1 and 99!
             wrapper="h2"
             repeat={Infinity}

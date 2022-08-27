@@ -21,11 +21,11 @@ const Contacts = () => {
                     </div>
                     <div className='flex flex-col items-center py-5'>
                         <div className='w-20 h-20 bg-pink-500 mb-3 p-5 rounded-full'><BsTelephoneFill className='text-4xl'/></div>
-                        <a href='https://wa.link/9ujjhc' className='text-sm font-sans'>+62-815-3262-2042</a>
+                        <a href='https://wa.link/9ujjhc' className='text-sm font-sans cursor-pointer hover:underline'>Contact me</a>
                     </div>
                 </div>
                 <div className='flex flex-col justify-center'>
-                    <p>My Address</p>                  
+                    <p className='text-center md:text-left'>My Address</p>                  
                     <p className='font-light font-sans'>Jl. Palembang-Sp.Padang KM.19 Desa Sako Kec. Rambutan, Banyuasin, Sumatera Selatan</p>                  
                 </div>
             </div>
