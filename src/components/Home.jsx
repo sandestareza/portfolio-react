@@ -6,19 +6,20 @@ const Home = () => {
   const [text, setText] = useState("")
   const [index, setIndex] = useState(0)
   
+  const typeWrite =  () => {
+      let fullText = "I'm Frontend Developer"
+      
+      if (index < fullText.length) {
+        setTimeout(() => {
+          setText(text + fullText[index])
+          setIndex(index + 1)
+        }, 40)
+      }
+  }
+  
   
   useEffect(() => {
     
-    let fullText = "I'm Frontend Developer"
-
-    const typeWrite =  () => {
-        if (index < fullText.length) {
-          setTimeout(() => {
-            setText(text + fullText[index])
-            setIndex(index + 1)
-          }, 40)
-        }
-    }
 
     typeWrite()
 
