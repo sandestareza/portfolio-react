@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 text-slate-300 bg-slate-900 shadow-md'>
-        <div className='w-14 h-14 border-2 bottom-3 rounded-full border-green-500 p-3 font-bold text-xl'>
+        <div className='w-14 h-14 bottom-3 p-3 font-bold text-xl'>
            SR
         </div>
 

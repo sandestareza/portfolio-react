@@ -15,10 +15,22 @@ const About = () => {
             </div>
             <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                 <div className='sm:text-right text-4xl font-bold'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore.</p>
+                    <p>Education</p>
                 </div>
                 <div>
-                    <p>Innovative and proactive UI designer capable of developing elegant website and app designs for demanding clients, according to my abilities. I like learning new things and working as a team.</p>                    
+                    <p className='font-sans'>Sistem Informasi (S1) - 2020</p>                    
+                    <p className='font-bold text-xl'>Indo Global Mandiri University</p>                    
+                    <p className='font-sans text-sm font-light'>Grade 3.38</p>                    
+                </div>
+            </div>
+            <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 mt-8'>
+                <div className='sm:text-right text-4xl font-bold'>
+                    <p>Experience</p>
+                </div>
+                <div>
+                    <p className='font-sans'>Web Developer, 2021 - 2022</p>                    
+                    <p className='font-bold text-xl'>PT. Loko Sistem Terintegrasi</p>                    
+                    <p className='font-sans text-sm font-light'>Develop and maintain features, Create reusable code and Guarantee the technical feasibility of the UI/UX design</p>                    
                 </div>
             </div>
         </div>
