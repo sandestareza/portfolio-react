@@ -1,6 +1,7 @@
 import React from 'react'
 import ReceiptApp from '../assets/receiptApp.png'
 import SisfoSchool from '../assets/sisfoSchool.png'
+import whatsappBot from '../assets/whatsappBot.png'
 
 const Portfolio = () => {
   return (
@@ -31,6 +32,18 @@ const Portfolio = () => {
                         <div className='pt-8 text-center'>
                             <a href="https://sisfoschool.loko.co.id">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style={{backgroundImage:`url(${whatsappBot})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>                    
+                    <div className='opacity-0 group-hover:opacity-100'>
+                        <span className='text-2xl font-bold text-white tracking-wider'>
+                            Whatsapp Bot
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="https://github.com/sandestareza/whatsapp-bot">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Github</button>
                             </a>
                         </div>
                     </div>
