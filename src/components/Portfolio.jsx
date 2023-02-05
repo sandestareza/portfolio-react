@@ -19,7 +19,7 @@ const Portfolio = () => {
                             Task App
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="https://receipts-app.netlify.app" target="_blank" rel="noopener noreferrer">
+                            <a href="https://tasks-todosapp.netlify.app" target="_blank" rel="noopener noreferrer">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
                         </div>
@@ -55,7 +55,7 @@ const Portfolio = () => {
                             SIM RS
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="https://todos-item.netlify.app">
+                            <a href="https://simrsloko.loko.co.id">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
                         </div>
