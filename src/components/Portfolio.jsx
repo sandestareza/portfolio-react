@@ -1,8 +1,8 @@
 import React from 'react'
-import ReceiptApp from '../assets/receiptApp.png'
+import TaskApp from '../assets/taskApp.png'
 import SisfoSchool from '../assets/sisfoSchool.png'
 import whatsappBot from '../assets/whatsappBot.png'
-import todolistApp from '../assets/todolistApp.png'
+import SimRs from '../assets/simrs.png'
 
 const Portfolio = () => {
   return (
@@ -13,10 +13,10 @@ const Portfolio = () => {
                 <p className='py-6'>Here are some of the projects I've worked on</p>
             </div>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>                
-                <div style={{backgroundImage:`url(${ReceiptApp})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>                    
+                <div style={{backgroundImage:`url(${TaskApp})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>                    
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            Receipt App
+                            Task App
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="https://receipts-app.netlify.app" target="_blank" rel="noopener noreferrer">
@@ -49,10 +49,10 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{backgroundImage:`url(${todolistApp})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>                    
+                <div style={{backgroundImage:`url(${SimRs})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>                    
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            Todo List App
+                            SIM RS
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="https://todos-item.netlify.app">
