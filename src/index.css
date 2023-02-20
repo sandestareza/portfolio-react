@@ -8,9 +8,14 @@
     body {
         @apply font-[Raleway];
     }
+
     li {
         @apply px-4;
         @apply cursor-pointer;
+    }
+
+    .dark{
+      @apply bg-gray-800;
     }
 }
 
@@ -67,4 +72,12 @@ html {
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: grey }
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  input:checked + .toggle span {
+    transform: translateX(20px);
   }
