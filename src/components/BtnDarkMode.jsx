@@ -36,7 +36,7 @@ function BtnDarkMode({showScroll}) {
 
     return (
         <div className={`flex fixed flex-col right-5 transition-all duration-300 ease-in ${showScroll ? ' bottom-[4.1rem]' : ' bottom-5'}`}>
-            <Tooltip tooltipMessage={!darkMode ? 'Dark' : 'Ligth'}>
+            <Tooltip tooltipMessage={!darkMode ? 'Dark' : 'Light'}>
                 <button className='rounded-full p-3 bg-green-800 dark:bg-green-600 text-md text-white font-bold hover:bg-green-900 group' onClick={handleDarkMode}>
                     {
                         darkMode ?
