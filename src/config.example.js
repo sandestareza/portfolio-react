@@ -1,1 +1,0 @@
-export const API_KEY_OPEN_AI = 'API_KEY_OPEN_AI' 

@@ -1,8 +1,5 @@
 import axios from "axios"
 
-
-import { API_KEY_OPEN_AI } from '../config'
-
 const ChatGPTRequest = async (prompt) => {
     const result = {
         data: "",
@@ -24,7 +21,7 @@ const ChatGPTRequest = async (prompt) => {
             "accept": "application/json",
             "Content-Type": "application/json",
             "Accept-Language": "in-ID",
-            "Authorization": `Bearer ${API_KEY_OPEN_AI}`,
+            "Authorization": `Bearer ${process.env.API_KEY_OPEN_AI}`,
         },
     })
     .then((response) => {     
