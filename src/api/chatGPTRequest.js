@@ -21,7 +21,7 @@ const ChatGPTRequest = async (prompt) => {
             "accept": "application/json",
             "Content-Type": "application/json",
             "Accept-Language": "in-ID",
-            "Authorization": `Bearer ${process.env.API_KEY_OPEN_AI}`,
+            "Authorization": `Bearer ${process.env.REACT_APP_API_KEY_OPEN_AI}`,
         },
     })
     .then((response) => {     
