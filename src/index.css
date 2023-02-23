@@ -81,3 +81,15 @@ html {
   input:checked + .toggle span {
     transform: translateX(20px);
   }
+
+ /* Membuat scrollbar */ 
+ ::-webkit-scrollbar 
+  { width: 10px; height: 10px; } 
+  /* Track */ 
+  ::-webkit-scrollbar-track 
+  { background: #f1f1f1;  } 
+  /* Handle */ 
+  ::-webkit-scrollbar-thumb 
+  { background: rgb(22 163 74); border-radius: 10px; } 
+  /* Handle on hover */ 
+  ::-webkit-scrollbar-thumb:hover { background: rgb(22 101 52); }
