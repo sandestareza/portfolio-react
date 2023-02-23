@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { FaRobot, FaTimes, FaUser } from 'react-icons/fa'
 import { BiSend } from 'react-icons/bi'
 import { Tooltip } from './Tooltip'
@@ -13,8 +13,6 @@ function BtnChatAI({showScroll}) {
     const [isError, setIsError] = useState(null)
 
     const [isLoading, setIsLoading] = useState(false)
-
-    const boxChat = useRef(null)
     
     const handleChange =  e => {
         const { value } = e.target
@@ -53,22 +51,16 @@ function BtnChatAI({showScroll}) {
     
             setPromt("")
 
-        }
-
-    }
-    
-    useEffect(() => {
-      
-        setTimeout(() => {
-            boxChat?.current?.addEventListener("DOMNodeInserted", e => {                
+            document.getElementById('boxMsg').addEventListener("DOMNodeInserted", e => {                           
                 e.currentTarget.scroll({
                     top: e.currentTarget.scrollHeight,
                     behavior: 'smooth'
                 })
-            })  
-        }, 3000);
-      
-    }, [])
+            })
+
+        }
+
+    }
     
 
     return (
@@ -83,7 +75,7 @@ function BtnChatAI({showScroll}) {
                                 <button type='button' className='focus:outline-none text-slate-100' onClick={()=>setIsShow(false)}><FaTimes /></button>
                             </div>
 
-                            <div className='text-black mt-2 mx-2 max-h-[215px] overflow-auto text-xs' ref={boxChat}>
+                            <div className='text-black mt-2 mx-2 max-h-[215px] overflow-auto text-xs' id='boxMsg'>
                                 <div className='w-full flex gap-1 p-1'>
                                     <div className='h-full bg-green-200 rounded-full flex justify-center items-center p-2'>
                                         <FaRobot size={15} className="text-green-600"/>
@@ -141,7 +133,7 @@ function BtnChatAI({showScroll}) {
                                 }
                                 {
                                     isLoading &&
-                                    <div className='w-full flex gap-1 p-1' ref={boxChat}>
+                                    <div className='w-full flex gap-1 p-1'>
                                         <div className='h-full bg-green-200 rounded-full flex justify-center items-center p-2'>
                                             <FaRobot size={15} className="text-green-600"/>
                                         </div>

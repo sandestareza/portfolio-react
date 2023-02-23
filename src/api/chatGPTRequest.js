@@ -1,7 +1,7 @@
 import axios from "axios"
 
 
-import { API_KEY_OPEN_AI } from '../../config'
+import { API_KEY_OPEN_AI } from '../config'
 
 const ChatGPTRequest = async (prompt) => {
     const result = {
