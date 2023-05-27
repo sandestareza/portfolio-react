@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link as LinkScroll } from "react-scroll";
-import BtnChatAI from './BtnChatAI';
+// import BtnChatAI from './BtnChatAI';
 import BtnDarkMode from './BtnDarkMode';
 import BtnScrollTop from './BtnScrollTop';
 import BtnSocialMedia from './BtnSocialMedia'
@@ -61,9 +61,9 @@ const Navbar = () => {
         />
 
         {/* Dark Mode */}
-        <BtnChatAI
+        {/* <BtnChatAI
           showScroll={isShow}
-        />
+        /> */}
 
         {
             isShow &&

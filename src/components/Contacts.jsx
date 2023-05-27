@@ -15,13 +15,17 @@ const Contacts = () => {
             </div>
             <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                 <div className='flex justify-evenly md:justify-around'>
-                    <div className='flex flex-col items-center py-5'>
-                        <div className='w-20 h-20 dark:bg-green-600 bg-green-800 text-gray-100 mb-3 p-4 rounded-full'><MdOutlineMailOutline className='text-5xl'/></div>
-                        <a href='mailto:sandesta24@gmail.com?subject=Requreitment' className='text-sm font-sans cursor-pointer hover:underline'>sandesta24@gmail.com</a>
+                    <div className='group'>
+                        <a href='mailto:sandesta24@gmail.com?subject=Requreitment' className='flex flex-col items-center py-5'>
+                            <div className='w-20 h-20 dark:bg-green-600 bg-green-800 text-gray-100 mb-3 p-4 rounded-full'><MdOutlineMailOutline className='text-5xl'/></div>
+                            <p className='text-sm font-sans cursor-pointer group-hover:underline'>sandesta24@gmail.com</p>
+                        </a>
                     </div>
-                    <div className='flex flex-col items-center py-5'>
-                        <div className='w-20 h-20 dark:bg-green-600 bg-green-800 text-gray-100 mb-3 p-5 rounded-full'><BsTelephoneFill className='text-4xl'/></div>
-                        <a href='https://wa.link/9ujjhc' className='text-sm font-sans cursor-pointer hover:underline'>Contact me</a>
+                    <div className='group'>
+                        <a href='https://wa.link/9ujjhc' className='flex flex-col items-center py-5'>
+                            <div className='w-20 h-20 dark:bg-green-600 bg-green-800 text-gray-100 mb-3 p-5 rounded-full'><BsTelephoneFill className='text-4xl'/></div>
+                            <p className='text-sm font-sans cursor-pointer group-hover:underline'>Contact me</p>
+                        </a>
                     </div>
                 </div>
                 <div className='flex flex-col justify-center'>

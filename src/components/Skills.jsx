@@ -1,11 +1,5 @@
 import React from 'react'
-
-import HTML from '../assets/html.png'
-import CSS from '../assets/css.png'
-import Tailwind from '../assets/tailwind.png'
-import JS from '../assets/js.png'
-import Reactjs from '../assets/reactjs.png'
-import Nextjs from '../assets/nextjs.png'
+import { SKILLS } from '../data'
 
 const Skills = () => {
   return (
@@ -17,31 +11,15 @@ const Skills = () => {
                 <p className='py-4'>These are the Thechnologies I've worked with</p>
             </div>
             {/* Icon */}
-            <div className='w-full grid grid-cols-2 sm:grid-cols-6 gap-4 text-center py-8'>
-                <div className='shadow-md dark:shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='w-20 mx-auto' src={HTML} alt="Html Icon" />
-                    <p className='my-4'>HTML</p>
-                </div>
-                <div className='shadow-md dark:shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='w-20 mx-auto' src={CSS} alt="Css Icon" />
-                    <p className='my-4'>CSS</p>
-                </div>
-                <div className='shadow-md dark:shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='w-20 mx-auto' src={Tailwind} alt="Tailwind Icon" />
-                    <p className='my-4'>Tailwind CSS</p>
-                </div>
-                <div className='shadow-md dark:shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='w-28 mx-auto' src={JS} alt="Js Icon" />
-                    <p className='my-4'>JavaScript</p>
-                </div>
-                <div className='shadow-md dark:shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='w-20 mx-auto' src={Reactjs} alt="Reactjs Icon" />
-                    <p className='my-4'>React JS</p>
-                </div>
-                <div className='shadow-md dark:shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='w-20 mx-auto' src={Nextjs} alt="NextJs Icon" />
-                    <p className='my-4'>Next JS</p>
-                </div>
+            <div className='w-full grid grid-cols-2 sm:grid-cols-6 gap-4 text-center py-10'>
+                {
+                    SKILLS.map(item=>(
+                        <div key={item.id} className='shadow-md dark:shadow-[#040c16] hover:scale-110 duration-500'>
+                            <img className='w-20 mx-auto' src={item.img} alt={item.title} />
+                            <p className='my-4'>{item.title}</p>
+                        </div>                
+                    ))
+                }
             </div>
         </div>
     </div>

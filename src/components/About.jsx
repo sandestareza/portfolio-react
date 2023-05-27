@@ -1,4 +1,5 @@
 import React from 'react'
+import { EXPERIENCE } from '../data'
 
 const About = () => {
   return (
@@ -27,10 +28,17 @@ const About = () => {
                 <div className='sm:text-right text-4xl font-bold'>
                     <p>Experience</p>
                 </div>
+                
                 <div>
-                    <p className='font-sans'>Web Developer, 2021 - Now</p>                    
-                    <p className='font-bold text-xl text-green-600 dark:text-gray-300'>PT. Loko Sistem Terintegrasi</p>                    
-                    <p className='font-sans text-sm font-light'>Develop and maintain features, Create reusable code and Guarantee the technical feasibility of the UI/UX design</p>                    
+                    {
+                        EXPERIENCE.map(item => (
+                            <div key={item.id} className="mt-3">
+                                <p className='font-sans'>{item.position}, {item.dateWork}</p>                    
+                                <p className='font-bold text-xl text-green-600 dark:text-gray-300'>{item.company}</p>                    
+                                <p className='font-sans text-sm font-light'>{item.desc}</p>                    
+                            </div>
+                        ))
+                    }             
                 </div>
             </div>
         </div>
